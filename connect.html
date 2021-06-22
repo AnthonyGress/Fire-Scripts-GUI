@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fire Scripts ToolKit</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Fire Scripts ToolKit</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Tools</h5>
+                <a href="index.html">
+                  <span class="nav-group-item">
+                    <span class="icon icon-home"></span>
+                    Home
+                  </span>
+                </a>
+                <a href="start.html">
+                  <span class="nav-group-item">
+                    <span class="icon icon-doc-text-inv"></span>
+                     Getting Started
+                   </a>
+              <a href="connect.html">
+                <span class="nav-group-item active">
+                  <span class="icon icon-signal"></span>
+                   Connect
+                 </a>
+              </span>
+              <a href="screensaver.html">
+              <span class="nav-group-item">
+                <span class="icon icon-light-up"></span>
+                Screensaver
+              </span>
+              </a>
+              <a href="install_apks.html">
+              <span class="nav-group-item">
+                <span class="icon icon-install"></span>
+                Install APKs
+              </span>
+              <a href="push_files.html">
+                <span class="nav-group-item">
+                  <span class="icon icon-export"></span>
+                  Send Files
+                </span>
+              </a>
+              <span class="nav-group-item">
+                <span class="icon icon-moon"></span> <em>Dark Mode</em>
+                <div class="theme-switch-wrapper">
+                  <label class="switch theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                  </label> 
+                </div>
+              </span>
+            </nav>
+          </div>
+
+          <div class="pane">
+            <h1> Connect over ADB </h1>
+            <table>
+              <tr>
+                  <td valign="top"><img src="img/number1.png" width="64" height="64" alt="number1"></td>
+                  <td valign="middle">Go to Firestick Settings > My Fire TV > About > Network</td>
+              </tr>
+              <tr>
+                <td valign="top"><img src="img/number2.png" width="64" height="64" alt="number2"></td>
+                <td valign="middle">Enter Firestick IP Address in the field below. </td>
+            </tr>
+            <tr>
+              <td valign="top"><img src="img/number3.png" width="64" height="64" alt="number3"></td>
+              <td valign="middle"> Click the "Connect" button to connect to your Firestick over ADB.</td>
+          </tr>
+          </table>
+            <form action="results.html" method="GET">
+              <div>
+                <h4 class="text-center">Enter Firestick IP Address:</h4>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="ipaddress" id="ipaddress" placeholder="Example: 192.168.0.1">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-large btn-primary">Connect</button>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+            <!-- Javascript -->
+            <script src="js/dark-mode-switch.min.js"></script>
+  </body>
+</html>

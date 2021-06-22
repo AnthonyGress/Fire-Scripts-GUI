@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fire Scripts ToolKit</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Fire Scripts ToolKit</h1>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Tools</h5>
+                <a href="index.html">
+                  <span class="nav-group-item">
+                    <span class="icon icon-home"></span>
+                    Home
+                  </span>
+                </a>
+                <a href="start.html">
+                  <span class="nav-group-item">
+                    <span class="icon icon-doc-text-inv"></span>
+                     Getting Started
+                   </a>
+              <a href="connect.html">
+                <span class="nav-group-item">
+                  <span class="icon icon-signal"></span>
+                   Connect
+                 </a>
+              </span>
+              <a href="screensaver.html">
+              <span class="nav-group-item">
+                <span class="icon icon-light-up"></span>
+                Screensaver
+              </span>
+              </a>
+              <a href="install_apks.html">
+              <span class="nav-group-item active">
+                <span class="icon icon-install"></span>
+                Install APKs
+              </span>
+              </a>
+            </a>
+            <a href="push_files.html">
+            <span class="nav-group-item">
+              <span class="icon icon-export"></span>
+              Send Files
+            </span>
+            </a>
+            <span class="nav-group-item">
+              <span class="icon icon-moon"></span> <em>Dark Mode</em>
+              <div class="theme-switch-wrapper">
+                <label class="switch theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+                </label> 
+              </div>
+            </span>
+            </nav>
+          </div>
+
+          <div class="pane">
+            <h1> Install APKs </h1>
+            <div class="center-div text-center"> 
+                APK files are android specific application files. <br><br>You can take APK files that you have downloaded on your computer and install them directly onto your Firestick.
+            </div>
+            <form  action="results.html" method="GET">
+              <div class="text-center">
+                <div>
+                  <h4 class="text-center">Select APK Files to Install</h4>
+                </div>
+                <input type="file" id="pushapks" name="pushapks" class="form-control" multiple>
+              </div>
+              <br>
+              <div>
+                <button type="submit" name="Install" class="btn btn-large btn-primary">Install</button>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Javascript -->
+        <script src="js/dark-mode-switch.min.js"></script>
+  </body>
+</html>
